@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SampleForm</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+
+<body>
+    <header>
+        <h1>Welcome</h1>
+        <p>Please Fill Out This Form</p>
+    </header>
+
+    <main>
+        <article>
+            <div>
+                <form action="/submit" method="post">
+                    <label for="name">Name:</label>
+                    <input name="name" type="text" id="name" placeholder="Please Enter Your Name" required />
+
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required />
+
+                    <br>
+                    <label>Password:</label>
+                    <input type="password" name="password" id="password" placeholder="password" required />
+
+                    <br>
+
+                    <fieldset>
+                        <legend for="feedback">Feedback</legend>
+                        <label for="feedback">1-5 Scale</label>
+                        <select name="feedback" id="feedback" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend for="contactMethod">Preferred Contact Method</legend>
+                        <label for="phone">
+                            <input type="radio" id="phone" name="contact" value="phone">
+                            Phone
+                        </label>
+                        <label for="email">
+                            <input type="radio" id="email" name="contact" value="email" checked>
+                            Email
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend for="interests">Additional Features Of Interest</legend>
+                        <label for="coding">
+                            <input type="checkbox" id="coding" name="interests" value="coding" >
+                            Coding
+                        </label>
+                        <label for="design">
+                            <input type="checkbox" id="design" name="interests" value="design">
+                            Design
+                        </label>
+                    </fieldset>
+
+                    <label for="comments">Feedback</label>
+                    <br>
+                    <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Additional Feedback"></textarea>
+                    <br>
+                    <button type="button">Submit</button>
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <footer></footer>
+
+
+
+</body>
+
+
+</html>
